@@ -27,6 +27,7 @@
 /* Begin PBXFileReference section */
 		53462DDD1F1FDBB6001DCD44 /* RCTYouTubeStandalone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTYouTubeStandalone.h; sourceTree = SOURCE_ROOT; };
 		53462DDE1F1FDBB6001DCD44 /* RCTYouTubeStandalone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTYouTubeStandalone.m; sourceTree = SOURCE_ROOT; };
+		687AD98C23BE5E370042AE27 /* Vendor */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Vendor; sourceTree = "<group>"; };
 		8B26A9171B428AA2000C2690 /* RCTYouTube.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTYouTube.h; sourceTree = SOURCE_ROOT; };
 		8B26A9181B428AA2000C2690 /* RCTYouTube.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTYouTube.m; sourceTree = SOURCE_ROOT; };
 		8B26A9191B428AA2000C2690 /* RCTYouTubeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTYouTubeManager.h; sourceTree = SOURCE_ROOT; };
@@ -48,6 +49,7 @@
 		8BDB9BC01B4289AE00EF9FEF = {
 			isa = PBXGroup;
 			children = (
+				687AD98C23BE5E370042AE27 /* Vendor */,
 				8BDB9BCB1B4289AE00EF9FEF /* RCTYouTube */,
 				8BDB9BCA1B4289AE00EF9FEF /* Products */,
 			);
@@ -260,6 +262,7 @@
 					"$(SRCROOT)/../react-native/React/**",
 					"$(SRCROOT)/../react-native/React/**/**",
 					"$(SRCROOT)/../../ios/Pods/Headers/Public",
+					"$(SRCROOT)/Vendor/YoutubePlayer-in-WKWebView",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -281,6 +284,7 @@
 					"$(SRCROOT)/../react-native/React/**",
 					"$(SRCROOT)/../react-native/React/**/**",
 					"$(SRCROOT)/../../ios/Pods/Headers/Public",
+					"$(SRCROOT)/Vendor/YoutubePlayer-in-WKWebView",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
