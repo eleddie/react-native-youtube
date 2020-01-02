@@ -6,16 +6,10 @@
 	objectVersion = 46;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		53462DDF1F1FDBB6001DCD44 /* RCTYouTubeStandalone.m in Sources */ = {isa = PBXBuildFile; fileRef = 53462DDE1F1FDBB6001DCD44 /* RCTYouTubeStandalone.m */; };
-		8B26A91B1B428AA2000C2690 /* RCTYouTube.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B26A9181B428AA2000C2690 /* RCTYouTube.m */; };
-		8B26A91C1B428AA2000C2690 /* RCTYouTubeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B26A91A1B428AA2000C2690 /* RCTYouTubeManager.m */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXContainerItemProxy section */
-		687AD99323BE61100042AE27 /* PBXContainerItemProxy */ = {
+		687AD9B623BE6AB60042AE27 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 687AD98F23BE61100042AE27 /* youtube-ios-player-helper.xcodeproj */;
+			containerPortal = 687AD9B223BE6AB60042AE27 /* youtube-ios-player-helper.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = B3C76A1A1B975AA700F375B4;
 			remoteInfo = YouTubeiOSPlayerHelper;
@@ -35,13 +29,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		53462DDD1F1FDBB6001DCD44 /* RCTYouTubeStandalone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTYouTubeStandalone.h; sourceTree = SOURCE_ROOT; };
-		53462DDE1F1FDBB6001DCD44 /* RCTYouTubeStandalone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTYouTubeStandalone.m; sourceTree = SOURCE_ROOT; };
-		687AD98F23BE61100042AE27 /* youtube-ios-player-helper.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "youtube-ios-player-helper.xcodeproj"; path = "Vendor/YoutubePlayer-in-WKWebView/youtube-ios-player-helper.xcodeproj"; sourceTree = "<group>"; };
-		8B26A9171B428AA2000C2690 /* RCTYouTube.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTYouTube.h; sourceTree = SOURCE_ROOT; };
-		8B26A9181B428AA2000C2690 /* RCTYouTube.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTYouTube.m; sourceTree = SOURCE_ROOT; };
-		8B26A9191B428AA2000C2690 /* RCTYouTubeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTYouTubeManager.h; sourceTree = SOURCE_ROOT; };
-		8B26A91A1B428AA2000C2690 /* RCTYouTubeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTYouTubeManager.m; sourceTree = SOURCE_ROOT; };
+		687AD9A023BE67E70042AE27 /* RCTYouTube */ = {isa = PBXFileReference; lastKnownFileType = folder; path = RCTYouTube; sourceTree = "<group>"; };
+		687AD9B223BE6AB60042AE27 /* youtube-ios-player-helper.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "youtube-ios-player-helper.xcodeproj"; path = "YoutubePlayer-in-WKWebView/youtube-ios-player-helper.xcodeproj"; sourceTree = "<group>"; };
 		8BDB9BC91B4289AE00EF9FEF /* libRCTYouTube.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRCTYouTube.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -56,10 +45,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		687AD99023BE61100042AE27 /* Products */ = {
+		687AD9AB23BE6A4B0042AE27 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
-				687AD99423BE61100042AE27 /* YouTubeiOSPlayerHelper.framework */,
+				687AD9B223BE6AB60042AE27 /* youtube-ios-player-helper.xcodeproj */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		687AD9B323BE6AB60042AE27 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				687AD9B723BE6AB60042AE27 /* YouTubeiOSPlayerHelper.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,8 +64,8 @@
 		8BDB9BC01B4289AE00EF9FEF = {
 			isa = PBXGroup;
 			children = (
-				687AD98F23BE61100042AE27 /* youtube-ios-player-helper.xcodeproj */,
-				8BDB9BCB1B4289AE00EF9FEF /* RCTYouTube */,
+				687AD9AB23BE6A4B0042AE27 /* Vendor */,
+				687AD9A023BE67E70042AE27 /* RCTYouTube */,
 				8BDB9BCA1B4289AE00EF9FEF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -79,19 +76,6 @@
 				8BDB9BC91B4289AE00EF9FEF /* libRCTYouTube.a */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		8BDB9BCB1B4289AE00EF9FEF /* RCTYouTube */ = {
-			isa = PBXGroup;
-			children = (
-				53462DDD1F1FDBB6001DCD44 /* RCTYouTubeStandalone.h */,
-				53462DDE1F1FDBB6001DCD44 /* RCTYouTubeStandalone.m */,
-				8B26A9171B428AA2000C2690 /* RCTYouTube.h */,
-				8B26A9181B428AA2000C2690 /* RCTYouTube.m */,
-				8B26A9191B428AA2000C2690 /* RCTYouTubeManager.h */,
-				8B26A91A1B428AA2000C2690 /* RCTYouTubeManager.m */,
-			);
-			path = RCTYouTube;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,8 +125,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 687AD99023BE61100042AE27 /* Products */;
-					ProjectRef = 687AD98F23BE61100042AE27 /* youtube-ios-player-helper.xcodeproj */;
+					ProductGroup = 687AD9B323BE6AB60042AE27 /* Products */;
+					ProjectRef = 687AD9B223BE6AB60042AE27 /* youtube-ios-player-helper.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -153,11 +137,11 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		687AD99423BE61100042AE27 /* YouTubeiOSPlayerHelper.framework */ = {
+		687AD9B723BE6AB60042AE27 /* YouTubeiOSPlayerHelper.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = YouTubeiOSPlayerHelper.framework;
-			remoteRef = 687AD99323BE61100042AE27 /* PBXContainerItemProxy */;
+			remoteRef = 687AD9B623BE6AB60042AE27 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -167,9 +151,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				53462DDF1F1FDBB6001DCD44 /* RCTYouTubeStandalone.m in Sources */,
-				8B26A91C1B428AA2000C2690 /* RCTYouTubeManager.m in Sources */,
-				8B26A91B1B428AA2000C2690 /* RCTYouTube.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,7 +277,7 @@
 					"$(SRCROOT)/../react-native/React/**",
 					"$(SRCROOT)/../react-native/React/**/**",
 					"$(SRCROOT)/../../ios/Pods/Headers/Public",
-					"$(SRCROOT)/youtube-ios-player-helper",
+					"$(SRCROOT)/Vendor/youtube-ios-player-helper",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -318,7 +299,7 @@
 					"$(SRCROOT)/../react-native/React/**",
 					"$(SRCROOT)/../react-native/React/**/**",
 					"$(SRCROOT)/../../ios/Pods/Headers/Public",
-					"$(SRCROOT)/youtube-ios-player-helper",
+					"$(SRCROOT)/Vendor/youtube-ios-player-helper",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
